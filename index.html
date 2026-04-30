@@ -422,6 +422,7 @@
 
     .comp-item:nth-child(3n) { border-right: none; }
     .comp-item:nth-child(n+10) { border-bottom: none; }
+    .comp-item:nth-child(-n+9) { border-bottom: 1px solid var(--border); }
 
     .comp-item::before {
       content: '';
@@ -906,6 +907,16 @@
           <div class="comp-number">10</div>
           <div class="comp-text">Business Intelligence &amp; Analytics</div>
           <div class="comp-tooltip">Consolidating reporting environments and delivering actionable data across ERP, CRM, and operational systems.</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-number">11</div>
+          <div class="comp-text">IT Governance &amp; Risk Management</div>
+          <div class="comp-tooltip">Establishing policies, controls, and oversight frameworks that align IT operations with business and compliance requirements.</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-number">12</div>
+          <div class="comp-text">IT Financial Management</div>
+          <div class="comp-tooltip">Managing technology budgets, vendor contracts, and investment prioritization to maximize ROI.</div>
         </div>
 
       </div>
