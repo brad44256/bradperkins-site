@@ -762,6 +762,38 @@
 
       footer { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
+
+    .comp-item { position: relative; }
+
+    .comp-tooltip {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--navy-mid);
+      border: 1px solid var(--border-amber);
+      color: var(--slate-light);
+      font-size: 0.78rem;
+      line-height: 1.6;
+      padding: 0.75rem 1rem;
+      width: 240px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 50;
+    }
+
+    .comp-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: var(--border-amber);
+    }
+
+    .comp-item:hover .comp-tooltip { opacity: 1; }
   </style>
 </head>
 <body>
@@ -800,10 +832,7 @@
           <span class="stat-num">18<span>+</span></span>
           <span class="stat-label">Years Leadership</span>
         </div>
-        <div class="stat-item">
-          <span class="stat-num">11</span>
-          <span class="stat-label">Global Locations</span>
-        </div>
+
       </div>
       <div class="hero-cta">
         <a href="mailto:brad@bradperkins.com" class="btn-primary">
@@ -831,38 +860,52 @@
         <div class="comp-item">
           <div class="comp-number">01</div>
           <div class="comp-text">Digital Transformation</div>
+          <div class="comp-tooltip">Modernizing legacy systems, processes, and culture to enable scalable, technology-driven operations.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">02</div>
           <div class="comp-text">ERP Implementation &amp; Modernization</div>
+          <div class="comp-tooltip">Full-lifecycle ERP delivery across Microsoft Dynamics NAV, Dynamics 365, and IFS Cloud in manufacturing and distribution environments.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">03</div>
           <div class="comp-text">AI Strategy &amp; Adoption</div>
+          <div class="comp-tooltip">Evaluating, piloting, and deploying AI tools — including Claude, ChatGPT, Microsoft Copilot, and ERP-embedded AI — across business functions.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">04</div>
           <div class="comp-text">IT Strategic Planning</div>
+          <div class="comp-tooltip">Translating business objectives into multi-year technology roadmaps with measurable outcomes and clear prioritization.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">05</div>
           <div class="comp-text">M&amp;A Systems Integration</div>
+          <div class="comp-tooltip">Leading post-acquisition systems consolidation across ERP, WMS, and CRM platforms under tight timelines.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">06</div>
           <div class="comp-text">Vendor &amp; Partner Management</div>
+          <div class="comp-tooltip">Structuring RFPs, negotiating contracts, and managing implementation partners and managed service providers.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">07</div>
           <div class="comp-text">Change Management</div>
+          <div class="comp-tooltip">Driving user adoption and organizational readiness across large-scale technology programs.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">08</div>
           <div class="comp-text">Cloud &amp; Infrastructure Strategy</div>
+          <div class="comp-tooltip">Architecting scalable, secure cloud and on-premise infrastructure across multi-site global operations.</div>
         </div>
         <div class="comp-item">
           <div class="comp-number">09</div>
           <div class="comp-text">Cross-functional Team Leadership</div>
+          <div class="comp-tooltip">Building and leading lean IT organizations that deliver enterprise-scale outcomes.</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-number">10</div>
+          <div class="comp-text">Business Intelligence &amp; Analytics</div>
+          <div class="comp-tooltip">Consolidating reporting environments and delivering actionable data across ERP, CRM, and operational systems.</div>
         </div>
 
       </div>
