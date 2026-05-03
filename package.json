@@ -1,0 +1,17 @@
+{
+  "name": "bradperkins-site",
+  "version": "1.0.0",
+  "description": "Brad Perkins - Technology Executive Personal Website",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static HTML - no build needed'",
+    "dev": "npx serve .",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [],
+  "author": "Brad Perkins",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
